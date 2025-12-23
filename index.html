@@ -417,29 +417,196 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
+            .container {
+                padding: 0 16px;
             }
 
-            h2 {
+            /* Header */
+            header {
+                padding: 60px 0 40px;
+            }
+
+            h1 {
                 font-size: 2rem;
             }
 
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 24px;
+            }
+
+            .tagline {
+                font-size: 1rem;
+                padding: 0 16px;
+            }
+
+            /* Navigation */
+            nav {
+                padding: 16px 0;
+            }
+
+            nav ul {
+                gap: 16px;
+                flex-wrap: wrap;
+                padding: 0 8px;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            /* Sections */
+            section {
+                padding: 60px 0;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 16px;
+            }
+
+            .section-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 40px;
+            }
+
+            /* About Section */
             .about-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
 
-            .gallery {
-                grid-template-columns: 1fr;
+            .about-text h3 {
+                font-size: 1.1rem;
             }
 
-            nav ul {
+            .about-text p {
+                font-size: 0.95rem;
+            }
+
+            .skills-list li {
+                font-size: 0.9rem;
+                padding: 10px 0;
+            }
+
+            /* Gallery */
+            .gallery {
+                grid-template-columns: 1fr;
                 gap: 24px;
             }
 
-            section {
-                padding: 60px 0;
+            .gallery-item img {
+                height: 300px;
+            }
+
+            .gallery-overlay {
+                padding: 16px;
+            }
+
+            .gallery-title {
+                font-size: 1rem;
+            }
+
+            .gallery-description {
+                font-size: 0.85rem;
+            }
+
+            /* Timeline */
+            .timeline {
+                margin-top: 40px;
+            }
+
+            .timeline-item {
+                padding-left: 28px;
+                padding-bottom: 36px;
+            }
+
+            .timeline-item h3 {
+                font-size: 1rem;
+            }
+
+            .timeline-item p {
+                font-size: 0.9rem;
+            }
+
+            /* Contact */
+            .contact-info p {
+                font-size: 1rem;
+                padding: 0 16px;
+            }
+
+            .contact-links {
+                gap: 16px;
+                padding: 0 16px;
+            }
+
+            .contact-btn {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+
+            /* Footer */
+            footer {
+                padding: 40px 0;
+                font-size: 0.85rem;
+            }
+
+            /* Black Hole */
+            .centerHover {
+                width: 180px;
+                height: 180px;
+                margin-top: -90px;
+                margin-left: -90px;
+                line-height: 180px;
+            }
+
+            .centerHover span {
+                font-size: 16px;
+            }
+
+            .centerHover span:before,
+            .centerHover span:after {
+                width: 12px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .tagline {
+                font-size: 0.9rem;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .gallery-item img {
+                height: 250px;
+            }
+
+            .centerHover {
+                width: 150px;
+                height: 150px;
+                margin-top: -75px;
+                margin-left: -75px;
+                line-height: 150px;
+            }
+
+            .centerHover span {
+                font-size: 14px;
             }
         }
     </style>
@@ -505,7 +672,7 @@
                 
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="portraitKIGURUMI.jpg" alt="kigurumiのポートレート撮影">
+                        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&h=800&fit=crop" alt="ポートレート撮影">
                         <div class="gallery-overlay">
                             <div class="gallery-title">ポートレート撮影</div>
                             <div class="gallery-description">人物の魅力を引き出すライティングと構図</div>
